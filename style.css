@@ -1,0 +1,77 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+main{
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 100vh;
+    transition-property: filter;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+#btn{
+    display: block;
+    width: fit-content;
+    margin-left: 8%;
+    margin-bottom: 6%;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font: 700 2rem 'Roboto';
+    padding: 1.2rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.404);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.37);
+}
+
+#btn:hover, #btn:active{
+    background-color: white;
+    color: black;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+
+.box{
+    background-color: white;
+    width:fit-content;
+    font: 700 2rem 'Poppins';
+    position: absolute;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 0.7rem;
+    bottom: 100%;
+    left: 45%;  
+}
+
+.x{
+    background: none;
+    border: 1px solid black;
+    font: 400 1.5rem 'Poppins';
+    border-radius: 5px;
+    height: fit-content;
+}
+
+.drop{
+    animation-name: drop;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes drop {
+    to {
+        transform: translateY(50vh);
+    }
+} 
+
+/*     filter: brightness(60%); */ 
